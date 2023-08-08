@@ -6,7 +6,7 @@ import io.kotest.matchers.shouldBe
 @AnnotationSpec.Test
 class MyTest : StringSpec({
 
-    "addition test" {
+    "addition test444" {
         val result = 2 + 3
         result shouldBe 5
     }
