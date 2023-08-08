@@ -7,8 +7,8 @@ import io.kotest.matchers.shouldBe
 class MyTest : StringSpec({
 
     "addition test" {
-        val result = 2 + 4
-        result shouldBe 6
+        val result = 2 + 3
+        result shouldBe 5
     }
 
     "subtraction test" {
