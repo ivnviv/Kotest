@@ -1,7 +1,7 @@
 // basePage.kt
 package Common
 
-class basePage {
+class BasePage() {
     fun open(url: String) {
         DriverManager.getDriver().get(url)
     }
@@ -9,4 +9,5 @@ class basePage {
     fun close() {
         DriverManager.quitDriver()
     }
+
 }
