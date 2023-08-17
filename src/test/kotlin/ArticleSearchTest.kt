@@ -7,7 +7,7 @@ import io.kotest.matchers.shouldBe
 class ArticleSearchTest : BaseTest() {
     init {
         "Search results should contain relevant article links" {
-           //val searchPage = SearchPage(DriverManager.getDriver())
+            val searchPage = SearchPage(DriverManager.getDriver())
             searchPage.typeSearchQuery("Kotlin is a programming language")
 
             val searchResultsPage = SearchResultsPage(DriverManager.getDriver())

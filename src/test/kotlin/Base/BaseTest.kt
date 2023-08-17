@@ -9,10 +9,6 @@ import Pages.SearchResultsPage
 import io.kotest.core.spec.style.StringSpec
 
 abstract class BaseTest : StringSpec() {
-    val searchPage = SearchPage(DriverManager.getDriver())
-    val articlePage = ArticlePage(DriverManager.getDriver())
-
-
     private val baseUrl = "https://ru.wikipedia.org/"
     private val basePage = BasePage()
 
@@ -21,11 +17,11 @@ abstract class BaseTest : StringSpec() {
             basePage.open(baseUrl)
         }
 
-        afterTest {
-            basePage.close()
-        }
+        //afterTest {
+           // basePage.close()
+        //}
     }
-    //fun getCurrentUrl(): String{
-        //return DriverManager.getDriver().currentUrl
-   // }
+    fun getCurrentUrl(): String{
+        return DriverManager.getDriver().currentUrl
+    }
 }
